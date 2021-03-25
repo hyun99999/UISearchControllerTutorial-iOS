@@ -22,7 +22,7 @@ class ViewController: UIViewController, UISearchResultsUpdating{
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        title = "Search"
+        title = "Search2"
         searchController.searchResultsUpdater = self
         navigationItem.searchController = searchController
     }
