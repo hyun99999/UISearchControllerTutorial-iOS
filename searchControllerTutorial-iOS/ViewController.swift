@@ -10,8 +10,9 @@ import UIKit
 class ResultVC: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemBlue
+        view.backgroundColor = .systemPink
     }
+    
 }
 
 class ViewController: UIViewController, UISearchResultsUpdating{
@@ -21,7 +22,7 @@ class ViewController: UIViewController, UISearchResultsUpdating{
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        title = "Search"
+        title = "Search2"
         searchController.searchResultsUpdater = self
         navigationItem.searchController = searchController
     }
