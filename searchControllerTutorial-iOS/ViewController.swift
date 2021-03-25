@@ -12,6 +12,7 @@ class ResultVC: UIViewController{
         super.viewDidLoad()
         view.backgroundColor = .systemBlue
     }
+    
 }
 
 class ViewController: UIViewController, UISearchResultsUpdating{
