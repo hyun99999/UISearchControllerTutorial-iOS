@@ -7,9 +7,16 @@
 
 import UIKit
 
-class ViewController: UIViewController{
+class ResultVC: UIViewController{
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = .systemBlue
+    }
+}
+
+class ViewController: UIViewController, UISearchResultsUpdating{
     
-    let searchController = UISearchController()
+    let searchController = UISearchController(searchResultsController: ResultVC())
     
     override func viewDidLoad() {
         super.viewDidLoad()
