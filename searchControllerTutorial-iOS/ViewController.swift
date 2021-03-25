@@ -15,7 +15,7 @@ class ResultVC: UIViewController{
     
 }
 
-class ViewController: UIViewController, UISearchResultsUpdating{
+class ViewController: UIViewController, UISearchResultsUpdating {
     
     let searchController = UISearchController(searchResultsController: ResultVC())
     
@@ -30,6 +30,8 @@ class ViewController: UIViewController, UISearchResultsUpdating{
         guard let text = searchController.searchBar.text else {
             return
         }
+        let vc = searchController.searchResultsController as? ResultVC
+        vc?.view.backgroundColor = .yellow
         print(text)
     }
 
